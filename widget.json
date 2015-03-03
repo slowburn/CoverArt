@@ -1,0 +1,6 @@
+{
+  "name": "CoverArt",
+  "description": "copies the current album cover from iTunes to display on desktop",
+  "author": "Andreas @slowbiex Schaefer",
+  "email": "it.mensch@gmail.com"
+}
