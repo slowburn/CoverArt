@@ -21,18 +21,15 @@ style: """
 """
 
 render: -> """
-<div id='cover'></div>
+<div>
+	<div class='album'>
+		<img src='CoverArt.widget/images/albumart.jpg' width='300' height='300'>
+	</div>
+</div>
 """
 
 # Update the rendered output.
 update: (output, domEl) ->
-	mydiv = $(domEl).find('div')
-	html = ''
-	
-	html += "<div class='album'>"
-	html += "<img src='CoverArt.widget/images/albumart.jpg' width='300' height='300'>"
-	html += "</div>"
-	
-	# Set the output
-	mydiv.html(html)
+	image = $(domEl).find('img')
+	image.attr('src', 'CoverArt.widget/images/albumart.jpg')
 
